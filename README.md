@@ -1,2 +1,2 @@
 # Alldocube_M8_overlay
-Overlay for GSIs. 
+Hardware-specific overlay for Treble ROM on Alldocube M8
