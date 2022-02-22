@@ -539,4 +539,6 @@
         <item>418.36</item>
         <item>420</item>
     </array>
+    <integer name="default_restore_year">2022</integer>
+    <integer name="config_wifi_framework_stop_scan_after_screen_off_delay">600000</integer>
 </resources>

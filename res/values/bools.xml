@@ -43,7 +43,7 @@
     <bool name="config_device_vt_available">true</bool>
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
-    <bool name="config_disableLockscreenByDefault">true</bool>
+    <bool name="config_disableLockscreenByDefault">false</bool>
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_dozePulsePickup">false</bool>
     <bool name="config_duplicate_port_omadm_wappush">false</bool>
@@ -54,6 +54,14 @@
     <bool name="config_enableFusedLocationOverlay">true</bool>
     <bool name="config_enableGeocoderOverlay">true</bool>
     <bool name="config_enableGeofenceOverlay">true</bool>
+        <!-- Whether to enable Hardware FLP overlay which allows Hardware FLP to be
+         replaced by an app at run-time. When disabled, only the
+         config_hardwareFlpPackageName package will be searched for Hardware Flp,
+         otherwise packages whose signature matches the signatures of
+         config_locationProviderPackageNames will be searched, and the service
+         with the highest version number will be picked. Anyone who wants to
+         disable the overlay mechanism can set it to false.
+         -->
     <bool name="config_enableHardwareFlpOverlay">true</bool>
     <bool name="config_enableNetworkLocationOverlay">true</bool>
     <bool name="config_enable_emergency_call_while_sim_locked">true</bool>
@@ -69,7 +77,7 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">true</bool>
+    <bool name="config_enableWifiDisplay">false</bool>
     <bool name="config_forceDefaultOrientation">false</bool>
     <bool name="config_freeformWindowManagement">true</bool>
     <!-- Is the device capable of hot swapping an ICC Card -->
@@ -106,7 +114,7 @@
     <bool name="config_supportsMultiWindow">true</bool>
     <bool name="config_supportsSplitScreenMultiWindow">true</bool>
     <!-- True if the device supports Sustained Performance Mode-->
-    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+    <bool name="config_sustainedPerformanceModeSupported">false</bool>
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
     <bool name="config_telephony_use_own_number_for_voicemail">false</bool>
